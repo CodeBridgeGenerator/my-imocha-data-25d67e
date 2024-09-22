@@ -1,0 +1,26 @@
+[
+    {
+        "e-invoicetypes": "01 - Invoice"
+    },
+    {
+        "e-invoicetypes": "02 - Credit Note"
+    },
+    {
+        "e-invoicetypes": "03 - Debit Note"
+    },
+    {
+        "e-invoicetypes": "04 - Refund Note"
+    },
+    {
+        "e-invoicetypes": "11 - Self-billed Invoice"
+    },
+    {
+        "e-invoicetypes": "12 - Self-billed Credit Note"
+    },
+    {
+        "e-invoicetypes": "13 - Self-billed Debit Note"
+    },
+    {
+        "e-invoicetypes": "14 - Self-billed Refund Note"
+    }
+]
