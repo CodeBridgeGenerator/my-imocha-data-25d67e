@@ -16,13 +16,7 @@
   "stack": [
     {
       "appName": "nodejs-backend",
-      "environments": [
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
+      "environments": [null, null, null, null, null],
       "pathToLogo": {
         "s": "/assets/applications_logos/nodejs-s.png",
         "l": "/assets/applications_logos/nodejs.png"
@@ -33,13 +27,7 @@
     },
     {
       "appName": "react-frontend",
-      "environments": [
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
+      "environments": [null, null, null, null, null],
       "pathToLogo": {
         "s": "/assets/applications_logos/react-s.png",
         "l": "/assets/applications_logos/react.png"
@@ -218,9 +206,7 @@
       "edit": true,
       "delete": true,
       "single": true,
-      "sidebar": [
-        "users"
-      ],
+      "sidebar": ["users"],
       "schemaList": [
         {
           "fieldName": "no",
@@ -4945,9 +4931,7 @@
       "edit": true,
       "delete": true,
       "single": true,
-      "sidebar": [
-        "users"
-      ],
+      "sidebar": ["users"],
       "schemaList": [
         {
           "fieldName": "measurement",
@@ -11305,9 +11289,7 @@
       "edit": true,
       "delete": true,
       "single": true,
-      "sidebar": [
-        "users"
-      ],
+      "sidebar": ["users"],
       "schemaList": [
         {
           "fieldName": "identifytype",
@@ -11386,9 +11368,7 @@
       "edit": true,
       "delete": true,
       "single": true,
-      "sidebar": [
-        "users"
-      ],
+      "sidebar": ["users"],
       "schemaList": [
         {
           "fieldName": "eInvoicetypes",
@@ -11479,9 +11459,7 @@
       "edit": true,
       "delete": true,
       "single": true,
-      "sidebar": [
-        "users"
-      ],
+      "sidebar": ["users"],
       "schemaList": [
         {
           "fieldName": "classificationcode",
@@ -11683,9 +11661,7 @@
       "edit": true,
       "delete": true,
       "single": true,
-      "sidebar": [
-        "users"
-      ],
+      "sidebar": ["users"],
       "schemaList": [
         {
           "fieldName": "paymentmode",
@@ -11776,9 +11752,7 @@
       "edit": true,
       "delete": true,
       "single": true,
-      "sidebar": [
-        "users"
-      ],
+      "sidebar": ["users"],
       "schemaList": [
         {
           "fieldName": "frequencyofbilling",
@@ -11872,9 +11846,7 @@
       "edit": true,
       "delete": true,
       "single": true,
-      "sidebar": [
-        "users"
-      ],
+      "sidebar": ["users"],
       "schemaList": [
         {
           "fieldName": "currencycode",
@@ -12481,9 +12453,7 @@
       "edit": true,
       "delete": true,
       "single": true,
-      "sidebar": [
-        "users"
-      ],
+      "sidebar": ["users"],
       "schemaList": [
         {
           "fieldName": "phonenumberprefix",
@@ -12580,9 +12550,7 @@
       "edit": true,
       "delete": true,
       "single": true,
-      "sidebar": [
-        "users"
-      ],
+      "sidebar": ["users"],
       "schemaList": [
         {
           "fieldName": "statecode",
@@ -12703,9 +12671,7 @@
       "edit": true,
       "delete": true,
       "single": true,
-      "sidebar": [
-        "users"
-      ],
+      "sidebar": ["users"],
       "schemaList": [
         {
           "fieldName": "countrycode",
@@ -13519,9 +13485,7 @@
       "edit": true,
       "delete": true,
       "single": true,
-      "sidebar": [
-        "users"
-      ],
+      "sidebar": ["users"],
       "schemaList": [
         {
           "fieldName": "taxtype",

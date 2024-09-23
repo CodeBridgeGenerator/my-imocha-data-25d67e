@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectLayout from "../Layouts/ProjectLayout";
 import { connect } from "react-redux";
-import EInvoiceTypesPage from "./EInvoiceTypesPage";
+import EInvoiceTypesPage from "./EinvoiceTypesPage";
 
 const EInvoiceTypeProjectLayoutPage = (props) => {
   return (

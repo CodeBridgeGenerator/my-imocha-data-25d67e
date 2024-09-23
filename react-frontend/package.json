@@ -36,7 +36,7 @@
 		"xlsx": "^0.18.5"
 	},
 	"scripts": {
-		"start": "react-scripts start",
+		"start": "react-scripts start --host=0.0.0.0",
 		"build": "react-scripts build",
 		"test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!my-library-dir)/'",
 		"eject": "react-scripts eject",

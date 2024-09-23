@@ -67,7 +67,7 @@ import TestsPage from "../cb_components/TestsPage/TestsPage";
 import InvoicePage from "../InvoicePage/InvoicePage";
 import MeasurementPage from "../MeasurementPage/MeasurementPage";
 import IdentifyTypePage from "../IdentifyTypePage/IdentifyTypePage";
-import EInvoiceTypesPage from "../EInvoiceTypesPage/EInvoiceTypesPage";
+import EInvoiceTypesPage from "../EinvoiceTypesPage/EinvoiceTypesPage";
 import ClassificationCodePage from "../ClassificationCodePage/ClassificationCodePage";
 import PaymentModePage from "../PaymentModePage/PaymentModePage";
 import FrequencyOfBillingPage from "../FrequencyOfBillingPage/FrequencyOfBillingPage";
@@ -296,41 +296,41 @@ const ProjectLayout = (props) => {
       case "userManagementDash":
         return <UserManagement />;
       case "messaging":
-        return <Messaging />
+        return <Messaging />;
       case "errors":
-        return <Errors />
+        return <Errors />;
       case "adminControl":
-        return <AdminControl />
+        return <AdminControl />;
       case "tests":
         return <TestsPage />;
       case "companyDash":
         return <CompanyData />;
       case "dash":
         return <Dashboard />;
-case "invoice":
-                return <InvoicePage />;
-case "measurement":
-                return <MeasurementPage />;
-case "identifyType":
-                return <IdentifyTypePage />;
-case "eInvoiceTypes":
-                return <EInvoiceTypesPage />;
-case "classificationCode":
-                return <ClassificationCodePage />;
-case "paymentMode":
-                return <PaymentModePage />;
-case "frequencyOfBilling":
-                return <FrequencyOfBillingPage />;
-case "currencyCode":
-                return <CurrencyCodePage />;
-case "phoneNumberPrefix":
-                return <PhoneNumberPrefixPage />;
-case "stateCode":
-                return <StateCodePage />;
-case "countryCode":
-                return <CountryCodePage />;
-case "taxType":
-                return <TaxTypePage />;
+      case "invoice":
+        return <InvoicePage />;
+      case "measurement":
+        return <MeasurementPage />;
+      case "identifyType":
+        return <IdentifyTypePage />;
+      case "eInvoiceTypes":
+        return <EInvoiceTypesPage />;
+      case "classificationCode":
+        return <ClassificationCodePage />;
+      case "paymentMode":
+        return <PaymentModePage />;
+      case "frequencyOfBilling":
+        return <FrequencyOfBillingPage />;
+      case "currencyCode":
+        return <CurrencyCodePage />;
+      case "phoneNumberPrefix":
+        return <PhoneNumberPrefixPage />;
+      case "stateCode":
+        return <StateCodePage />;
+      case "countryCode":
+        return <CountryCodePage />;
+      case "taxType":
+        return <TaxTypePage />;
       /* ~cb-add-thurthy~ */
       default:
         return props.children ? props.children : <DynamicDashboards />;
@@ -729,390 +729,508 @@ case "taxType":
                     App Services
                   </div>
                   <ul className="list-none p-0 m-0">
-<li
-                onClick={() => {
-                  setCurrentActiveTab2("invoice");
-                }}
-                className={classNames("mb-3 flex align-items-start p-3", {
-                  "bg-yellow-700": props?.currentActiveTab2 === "invoice",
-                })}
-                style={{ borderRadius: "12px" }}
-              >
-                <i
-                  className="pi pi-user text-xl mr-3 "
-                  style={{ color: props?.currentActiveTab2 !== "invoice" ? "black" : "white" }}
-                ></i>
-                <div className="flex flex-column">
-                  <span
-                    className={classNames({
-                      "text-white": props?.currentActiveTab2 === "invoice",
-                      "text-black": props?.currentActiveTab2 !== "invoice",
-                    })}
-                  >
-                  Invoice
-                  </span>
-                  <p
-                    className={classNames("mt-2 mb-0 line-height-3 ", {
-                      "text-yellow-500": props?.currentActiveTab2 === "invoice",
-                      "text-yellow-700": props?.currentActiveTab2 !== "invoice",
-                    })}
-                  >
-                    Accumsan sit amet nulla facilisi morbi tempus iaculis.
-                  </p>
-                </div>
-              </li>
-<li
-                onClick={() => {
-                  setCurrentActiveTab2("measurement");
-                }}
-                className={classNames("mb-3 flex align-items-start p-3", {
-                  "bg-yellow-700": props?.currentActiveTab2 === "measurement",
-                })}
-                style={{ borderRadius: "12px" }}
-              >
-                <i
-                  className="pi pi-user text-xl mr-3 "
-                  style={{ color: props?.currentActiveTab2 !== "measurement" ? "black" : "white" }}
-                ></i>
-                <div className="flex flex-column">
-                  <span
-                    className={classNames({
-                      "text-white": props?.currentActiveTab2 === "measurement",
-                      "text-black": props?.currentActiveTab2 !== "measurement",
-                    })}
-                  >
-                  Measurement
-                  </span>
-                  <p
-                    className={classNames("mt-2 mb-0 line-height-3 ", {
-                      "text-yellow-500": props?.currentActiveTab2 === "measurement",
-                      "text-yellow-700": props?.currentActiveTab2 !== "measurement",
-                    })}
-                  >
-                    Accumsan sit amet nulla facilisi morbi tempus iaculis.
-                  </p>
-                </div>
-              </li>
-<li
-                onClick={() => {
-                  setCurrentActiveTab2("identifyType");
-                }}
-                className={classNames("mb-3 flex align-items-start p-3", {
-                  "bg-yellow-700": props?.currentActiveTab2 === "identifyType",
-                })}
-                style={{ borderRadius: "12px" }}
-              >
-                <i
-                  className="pi pi-user text-xl mr-3 "
-                  style={{ color: props?.currentActiveTab2 !== "identifyType" ? "black" : "white" }}
-                ></i>
-                <div className="flex flex-column">
-                  <span
-                    className={classNames({
-                      "text-white": props?.currentActiveTab2 === "identifyType",
-                      "text-black": props?.currentActiveTab2 !== "identifyType",
-                    })}
-                  >
-                  Identify Type
-                  </span>
-                  <p
-                    className={classNames("mt-2 mb-0 line-height-3 ", {
-                      "text-yellow-500": props?.currentActiveTab2 === "identifyType",
-                      "text-yellow-700": props?.currentActiveTab2 !== "identifyType",
-                    })}
-                  >
-                    Accumsan sit amet nulla facilisi morbi tempus iaculis.
-                  </p>
-                </div>
-              </li>
-<li
-                onClick={() => {
-                  setCurrentActiveTab2("eInvoiceTypes");
-                }}
-                className={classNames("mb-3 flex align-items-start p-3", {
-                  "bg-yellow-700": props?.currentActiveTab2 === "eInvoiceTypes",
-                })}
-                style={{ borderRadius: "12px" }}
-              >
-                <i
-                  className="pi pi-user text-xl mr-3 "
-                  style={{ color: props?.currentActiveTab2 !== "eInvoiceTypes" ? "black" : "white" }}
-                ></i>
-                <div className="flex flex-column">
-                  <span
-                    className={classNames({
-                      "text-white": props?.currentActiveTab2 === "eInvoiceTypes",
-                      "text-black": props?.currentActiveTab2 !== "eInvoiceTypes",
-                    })}
-                  >
-                  E-invoice Types
-                  </span>
-                  <p
-                    className={classNames("mt-2 mb-0 line-height-3 ", {
-                      "text-yellow-500": props?.currentActiveTab2 === "eInvoiceTypes",
-                      "text-yellow-700": props?.currentActiveTab2 !== "eInvoiceTypes",
-                    })}
-                  >
-                    Accumsan sit amet nulla facilisi morbi tempus iaculis.
-                  </p>
-                </div>
-              </li>
-<li
-                onClick={() => {
-                  setCurrentActiveTab2("classificationCode");
-                }}
-                className={classNames("mb-3 flex align-items-start p-3", {
-                  "bg-yellow-700": props?.currentActiveTab2 === "classificationCode",
-                })}
-                style={{ borderRadius: "12px" }}
-              >
-                <i
-                  className="pi pi-user text-xl mr-3 "
-                  style={{ color: props?.currentActiveTab2 !== "classificationCode" ? "black" : "white" }}
-                ></i>
-                <div className="flex flex-column">
-                  <span
-                    className={classNames({
-                      "text-white": props?.currentActiveTab2 === "classificationCode",
-                      "text-black": props?.currentActiveTab2 !== "classificationCode",
-                    })}
-                  >
-                  Classification Code
-                  </span>
-                  <p
-                    className={classNames("mt-2 mb-0 line-height-3 ", {
-                      "text-yellow-500": props?.currentActiveTab2 === "classificationCode",
-                      "text-yellow-700": props?.currentActiveTab2 !== "classificationCode",
-                    })}
-                  >
-                    Accumsan sit amet nulla facilisi morbi tempus iaculis.
-                  </p>
-                </div>
-              </li>
-<li
-                onClick={() => {
-                  setCurrentActiveTab2("paymentMode");
-                }}
-                className={classNames("mb-3 flex align-items-start p-3", {
-                  "bg-yellow-700": props?.currentActiveTab2 === "paymentMode",
-                })}
-                style={{ borderRadius: "12px" }}
-              >
-                <i
-                  className="pi pi-user text-xl mr-3 "
-                  style={{ color: props?.currentActiveTab2 !== "paymentMode" ? "black" : "white" }}
-                ></i>
-                <div className="flex flex-column">
-                  <span
-                    className={classNames({
-                      "text-white": props?.currentActiveTab2 === "paymentMode",
-                      "text-black": props?.currentActiveTab2 !== "paymentMode",
-                    })}
-                  >
-                  Payment Mode
-                  </span>
-                  <p
-                    className={classNames("mt-2 mb-0 line-height-3 ", {
-                      "text-yellow-500": props?.currentActiveTab2 === "paymentMode",
-                      "text-yellow-700": props?.currentActiveTab2 !== "paymentMode",
-                    })}
-                  >
-                    Accumsan sit amet nulla facilisi morbi tempus iaculis.
-                  </p>
-                </div>
-              </li>
-<li
-                onClick={() => {
-                  setCurrentActiveTab2("frequencyOfBilling");
-                }}
-                className={classNames("mb-3 flex align-items-start p-3", {
-                  "bg-yellow-700": props?.currentActiveTab2 === "frequencyOfBilling",
-                })}
-                style={{ borderRadius: "12px" }}
-              >
-                <i
-                  className="pi pi-user text-xl mr-3 "
-                  style={{ color: props?.currentActiveTab2 !== "frequencyOfBilling" ? "black" : "white" }}
-                ></i>
-                <div className="flex flex-column">
-                  <span
-                    className={classNames({
-                      "text-white": props?.currentActiveTab2 === "frequencyOfBilling",
-                      "text-black": props?.currentActiveTab2 !== "frequencyOfBilling",
-                    })}
-                  >
-                  Frequency Of Billing
-                  </span>
-                  <p
-                    className={classNames("mt-2 mb-0 line-height-3 ", {
-                      "text-yellow-500": props?.currentActiveTab2 === "frequencyOfBilling",
-                      "text-yellow-700": props?.currentActiveTab2 !== "frequencyOfBilling",
-                    })}
-                  >
-                    Accumsan sit amet nulla facilisi morbi tempus iaculis.
-                  </p>
-                </div>
-              </li>
-<li
-                onClick={() => {
-                  setCurrentActiveTab2("currencyCode");
-                }}
-                className={classNames("mb-3 flex align-items-start p-3", {
-                  "bg-yellow-700": props?.currentActiveTab2 === "currencyCode",
-                })}
-                style={{ borderRadius: "12px" }}
-              >
-                <i
-                  className="pi pi-user text-xl mr-3 "
-                  style={{ color: props?.currentActiveTab2 !== "currencyCode" ? "black" : "white" }}
-                ></i>
-                <div className="flex flex-column">
-                  <span
-                    className={classNames({
-                      "text-white": props?.currentActiveTab2 === "currencyCode",
-                      "text-black": props?.currentActiveTab2 !== "currencyCode",
-                    })}
-                  >
-                  Currency Code
-                  </span>
-                  <p
-                    className={classNames("mt-2 mb-0 line-height-3 ", {
-                      "text-yellow-500": props?.currentActiveTab2 === "currencyCode",
-                      "text-yellow-700": props?.currentActiveTab2 !== "currencyCode",
-                    })}
-                  >
-                    Accumsan sit amet nulla facilisi morbi tempus iaculis.
-                  </p>
-                </div>
-              </li>
-<li
-                onClick={() => {
-                  setCurrentActiveTab2("phoneNumberPrefix");
-                }}
-                className={classNames("mb-3 flex align-items-start p-3", {
-                  "bg-yellow-700": props?.currentActiveTab2 === "phoneNumberPrefix",
-                })}
-                style={{ borderRadius: "12px" }}
-              >
-                <i
-                  className="pi pi-user text-xl mr-3 "
-                  style={{ color: props?.currentActiveTab2 !== "phoneNumberPrefix" ? "black" : "white" }}
-                ></i>
-                <div className="flex flex-column">
-                  <span
-                    className={classNames({
-                      "text-white": props?.currentActiveTab2 === "phoneNumberPrefix",
-                      "text-black": props?.currentActiveTab2 !== "phoneNumberPrefix",
-                    })}
-                  >
-                  Phone Number Prefix
-                  </span>
-                  <p
-                    className={classNames("mt-2 mb-0 line-height-3 ", {
-                      "text-yellow-500": props?.currentActiveTab2 === "phoneNumberPrefix",
-                      "text-yellow-700": props?.currentActiveTab2 !== "phoneNumberPrefix",
-                    })}
-                  >
-                    Accumsan sit amet nulla facilisi morbi tempus iaculis.
-                  </p>
-                </div>
-              </li>
-<li
-                onClick={() => {
-                  setCurrentActiveTab2("stateCode");
-                }}
-                className={classNames("mb-3 flex align-items-start p-3", {
-                  "bg-yellow-700": props?.currentActiveTab2 === "stateCode",
-                })}
-                style={{ borderRadius: "12px" }}
-              >
-                <i
-                  className="pi pi-user text-xl mr-3 "
-                  style={{ color: props?.currentActiveTab2 !== "stateCode" ? "black" : "white" }}
-                ></i>
-                <div className="flex flex-column">
-                  <span
-                    className={classNames({
-                      "text-white": props?.currentActiveTab2 === "stateCode",
-                      "text-black": props?.currentActiveTab2 !== "stateCode",
-                    })}
-                  >
-                  State Code
-                  </span>
-                  <p
-                    className={classNames("mt-2 mb-0 line-height-3 ", {
-                      "text-yellow-500": props?.currentActiveTab2 === "stateCode",
-                      "text-yellow-700": props?.currentActiveTab2 !== "stateCode",
-                    })}
-                  >
-                    Accumsan sit amet nulla facilisi morbi tempus iaculis.
-                  </p>
-                </div>
-              </li>
-<li
-                onClick={() => {
-                  setCurrentActiveTab2("countryCode");
-                }}
-                className={classNames("mb-3 flex align-items-start p-3", {
-                  "bg-yellow-700": props?.currentActiveTab2 === "countryCode",
-                })}
-                style={{ borderRadius: "12px" }}
-              >
-                <i
-                  className="pi pi-user text-xl mr-3 "
-                  style={{ color: props?.currentActiveTab2 !== "countryCode" ? "black" : "white" }}
-                ></i>
-                <div className="flex flex-column">
-                  <span
-                    className={classNames({
-                      "text-white": props?.currentActiveTab2 === "countryCode",
-                      "text-black": props?.currentActiveTab2 !== "countryCode",
-                    })}
-                  >
-                  Country Code
-                  </span>
-                  <p
-                    className={classNames("mt-2 mb-0 line-height-3 ", {
-                      "text-yellow-500": props?.currentActiveTab2 === "countryCode",
-                      "text-yellow-700": props?.currentActiveTab2 !== "countryCode",
-                    })}
-                  >
-                    Accumsan sit amet nulla facilisi morbi tempus iaculis.
-                  </p>
-                </div>
-              </li>
-<li
-                onClick={() => {
-                  setCurrentActiveTab2("taxType");
-                }}
-                className={classNames("mb-3 flex align-items-start p-3", {
-                  "bg-yellow-700": props?.currentActiveTab2 === "taxType",
-                })}
-                style={{ borderRadius: "12px" }}
-              >
-                <i
-                  className="pi pi-user text-xl mr-3 "
-                  style={{ color: props?.currentActiveTab2 !== "taxType" ? "black" : "white" }}
-                ></i>
-                <div className="flex flex-column">
-                  <span
-                    className={classNames({
-                      "text-white": props?.currentActiveTab2 === "taxType",
-                      "text-black": props?.currentActiveTab2 !== "taxType",
-                    })}
-                  >
-                  Tax Type
-                  </span>
-                  <p
-                    className={classNames("mt-2 mb-0 line-height-3 ", {
-                      "text-yellow-500": props?.currentActiveTab2 === "taxType",
-                      "text-yellow-700": props?.currentActiveTab2 !== "taxType",
-                    })}
-                  >
-                    Accumsan sit amet nulla facilisi morbi tempus iaculis.
-                  </p>
-                </div>
-              </li>
+                    <li
+                      onClick={() => {
+                        setCurrentActiveTab2("invoice");
+                      }}
+                      className={classNames("mb-3 flex align-items-start p-3", {
+                        "bg-yellow-700": props?.currentActiveTab2 === "invoice",
+                      })}
+                      style={{ borderRadius: "12px" }}
+                    >
+                      <i
+                        className="pi pi-user text-xl mr-3 "
+                        style={{
+                          color:
+                            props?.currentActiveTab2 !== "invoice"
+                              ? "black"
+                              : "white",
+                        }}
+                      ></i>
+                      <div className="flex flex-column">
+                        <span
+                          className={classNames({
+                            "text-white":
+                              props?.currentActiveTab2 === "invoice",
+                            "text-black":
+                              props?.currentActiveTab2 !== "invoice",
+                          })}
+                        >
+                          Invoice
+                        </span>
+                        <p
+                          className={classNames("mt-2 mb-0 line-height-3 ", {
+                            "text-yellow-500":
+                              props?.currentActiveTab2 === "invoice",
+                            "text-yellow-700":
+                              props?.currentActiveTab2 !== "invoice",
+                          })}
+                        >
+                          Accumsan sit amet nulla facilisi morbi tempus iaculis.
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      onClick={() => {
+                        setCurrentActiveTab2("measurement");
+                      }}
+                      className={classNames("mb-3 flex align-items-start p-3", {
+                        "bg-yellow-700":
+                          props?.currentActiveTab2 === "measurement",
+                      })}
+                      style={{ borderRadius: "12px" }}
+                    >
+                      <i
+                        className="pi pi-user text-xl mr-3 "
+                        style={{
+                          color:
+                            props?.currentActiveTab2 !== "measurement"
+                              ? "black"
+                              : "white",
+                        }}
+                      ></i>
+                      <div className="flex flex-column">
+                        <span
+                          className={classNames({
+                            "text-white":
+                              props?.currentActiveTab2 === "measurement",
+                            "text-black":
+                              props?.currentActiveTab2 !== "measurement",
+                          })}
+                        >
+                          Measurement
+                        </span>
+                        <p
+                          className={classNames("mt-2 mb-0 line-height-3 ", {
+                            "text-yellow-500":
+                              props?.currentActiveTab2 === "measurement",
+                            "text-yellow-700":
+                              props?.currentActiveTab2 !== "measurement",
+                          })}
+                        >
+                          Accumsan sit amet nulla facilisi morbi tempus iaculis.
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      onClick={() => {
+                        setCurrentActiveTab2("identifyType");
+                      }}
+                      className={classNames("mb-3 flex align-items-start p-3", {
+                        "bg-yellow-700":
+                          props?.currentActiveTab2 === "identifyType",
+                      })}
+                      style={{ borderRadius: "12px" }}
+                    >
+                      <i
+                        className="pi pi-user text-xl mr-3 "
+                        style={{
+                          color:
+                            props?.currentActiveTab2 !== "identifyType"
+                              ? "black"
+                              : "white",
+                        }}
+                      ></i>
+                      <div className="flex flex-column">
+                        <span
+                          className={classNames({
+                            "text-white":
+                              props?.currentActiveTab2 === "identifyType",
+                            "text-black":
+                              props?.currentActiveTab2 !== "identifyType",
+                          })}
+                        >
+                          Identify Type
+                        </span>
+                        <p
+                          className={classNames("mt-2 mb-0 line-height-3 ", {
+                            "text-yellow-500":
+                              props?.currentActiveTab2 === "identifyType",
+                            "text-yellow-700":
+                              props?.currentActiveTab2 !== "identifyType",
+                          })}
+                        >
+                          Accumsan sit amet nulla facilisi morbi tempus iaculis.
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      onClick={() => {
+                        setCurrentActiveTab2("eInvoiceTypes");
+                      }}
+                      className={classNames("mb-3 flex align-items-start p-3", {
+                        "bg-yellow-700":
+                          props?.currentActiveTab2 === "eInvoiceTypes",
+                      })}
+                      style={{ borderRadius: "12px" }}
+                    >
+                      <i
+                        className="pi pi-user text-xl mr-3 "
+                        style={{
+                          color:
+                            props?.currentActiveTab2 !== "eInvoiceTypes"
+                              ? "black"
+                              : "white",
+                        }}
+                      ></i>
+                      <div className="flex flex-column">
+                        <span
+                          className={classNames({
+                            "text-white":
+                              props?.currentActiveTab2 === "eInvoiceTypes",
+                            "text-black":
+                              props?.currentActiveTab2 !== "eInvoiceTypes",
+                          })}
+                        >
+                          E-invoice Types
+                        </span>
+                        <p
+                          className={classNames("mt-2 mb-0 line-height-3 ", {
+                            "text-yellow-500":
+                              props?.currentActiveTab2 === "eInvoiceTypes",
+                            "text-yellow-700":
+                              props?.currentActiveTab2 !== "eInvoiceTypes",
+                          })}
+                        >
+                          Accumsan sit amet nulla facilisi morbi tempus iaculis.
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      onClick={() => {
+                        setCurrentActiveTab2("classificationCode");
+                      }}
+                      className={classNames("mb-3 flex align-items-start p-3", {
+                        "bg-yellow-700":
+                          props?.currentActiveTab2 === "classificationCode",
+                      })}
+                      style={{ borderRadius: "12px" }}
+                    >
+                      <i
+                        className="pi pi-user text-xl mr-3 "
+                        style={{
+                          color:
+                            props?.currentActiveTab2 !== "classificationCode"
+                              ? "black"
+                              : "white",
+                        }}
+                      ></i>
+                      <div className="flex flex-column">
+                        <span
+                          className={classNames({
+                            "text-white":
+                              props?.currentActiveTab2 === "classificationCode",
+                            "text-black":
+                              props?.currentActiveTab2 !== "classificationCode",
+                          })}
+                        >
+                          Classification Code
+                        </span>
+                        <p
+                          className={classNames("mt-2 mb-0 line-height-3 ", {
+                            "text-yellow-500":
+                              props?.currentActiveTab2 === "classificationCode",
+                            "text-yellow-700":
+                              props?.currentActiveTab2 !== "classificationCode",
+                          })}
+                        >
+                          Accumsan sit amet nulla facilisi morbi tempus iaculis.
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      onClick={() => {
+                        setCurrentActiveTab2("paymentMode");
+                      }}
+                      className={classNames("mb-3 flex align-items-start p-3", {
+                        "bg-yellow-700":
+                          props?.currentActiveTab2 === "paymentMode",
+                      })}
+                      style={{ borderRadius: "12px" }}
+                    >
+                      <i
+                        className="pi pi-user text-xl mr-3 "
+                        style={{
+                          color:
+                            props?.currentActiveTab2 !== "paymentMode"
+                              ? "black"
+                              : "white",
+                        }}
+                      ></i>
+                      <div className="flex flex-column">
+                        <span
+                          className={classNames({
+                            "text-white":
+                              props?.currentActiveTab2 === "paymentMode",
+                            "text-black":
+                              props?.currentActiveTab2 !== "paymentMode",
+                          })}
+                        >
+                          Payment Mode
+                        </span>
+                        <p
+                          className={classNames("mt-2 mb-0 line-height-3 ", {
+                            "text-yellow-500":
+                              props?.currentActiveTab2 === "paymentMode",
+                            "text-yellow-700":
+                              props?.currentActiveTab2 !== "paymentMode",
+                          })}
+                        >
+                          Accumsan sit amet nulla facilisi morbi tempus iaculis.
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      onClick={() => {
+                        setCurrentActiveTab2("frequencyOfBilling");
+                      }}
+                      className={classNames("mb-3 flex align-items-start p-3", {
+                        "bg-yellow-700":
+                          props?.currentActiveTab2 === "frequencyOfBilling",
+                      })}
+                      style={{ borderRadius: "12px" }}
+                    >
+                      <i
+                        className="pi pi-user text-xl mr-3 "
+                        style={{
+                          color:
+                            props?.currentActiveTab2 !== "frequencyOfBilling"
+                              ? "black"
+                              : "white",
+                        }}
+                      ></i>
+                      <div className="flex flex-column">
+                        <span
+                          className={classNames({
+                            "text-white":
+                              props?.currentActiveTab2 === "frequencyOfBilling",
+                            "text-black":
+                              props?.currentActiveTab2 !== "frequencyOfBilling",
+                          })}
+                        >
+                          Frequency Of Billing
+                        </span>
+                        <p
+                          className={classNames("mt-2 mb-0 line-height-3 ", {
+                            "text-yellow-500":
+                              props?.currentActiveTab2 === "frequencyOfBilling",
+                            "text-yellow-700":
+                              props?.currentActiveTab2 !== "frequencyOfBilling",
+                          })}
+                        >
+                          Accumsan sit amet nulla facilisi morbi tempus iaculis.
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      onClick={() => {
+                        setCurrentActiveTab2("currencyCode");
+                      }}
+                      className={classNames("mb-3 flex align-items-start p-3", {
+                        "bg-yellow-700":
+                          props?.currentActiveTab2 === "currencyCode",
+                      })}
+                      style={{ borderRadius: "12px" }}
+                    >
+                      <i
+                        className="pi pi-user text-xl mr-3 "
+                        style={{
+                          color:
+                            props?.currentActiveTab2 !== "currencyCode"
+                              ? "black"
+                              : "white",
+                        }}
+                      ></i>
+                      <div className="flex flex-column">
+                        <span
+                          className={classNames({
+                            "text-white":
+                              props?.currentActiveTab2 === "currencyCode",
+                            "text-black":
+                              props?.currentActiveTab2 !== "currencyCode",
+                          })}
+                        >
+                          Currency Code
+                        </span>
+                        <p
+                          className={classNames("mt-2 mb-0 line-height-3 ", {
+                            "text-yellow-500":
+                              props?.currentActiveTab2 === "currencyCode",
+                            "text-yellow-700":
+                              props?.currentActiveTab2 !== "currencyCode",
+                          })}
+                        >
+                          Accumsan sit amet nulla facilisi morbi tempus iaculis.
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      onClick={() => {
+                        setCurrentActiveTab2("phoneNumberPrefix");
+                      }}
+                      className={classNames("mb-3 flex align-items-start p-3", {
+                        "bg-yellow-700":
+                          props?.currentActiveTab2 === "phoneNumberPrefix",
+                      })}
+                      style={{ borderRadius: "12px" }}
+                    >
+                      <i
+                        className="pi pi-user text-xl mr-3 "
+                        style={{
+                          color:
+                            props?.currentActiveTab2 !== "phoneNumberPrefix"
+                              ? "black"
+                              : "white",
+                        }}
+                      ></i>
+                      <div className="flex flex-column">
+                        <span
+                          className={classNames({
+                            "text-white":
+                              props?.currentActiveTab2 === "phoneNumberPrefix",
+                            "text-black":
+                              props?.currentActiveTab2 !== "phoneNumberPrefix",
+                          })}
+                        >
+                          Phone Number Prefix
+                        </span>
+                        <p
+                          className={classNames("mt-2 mb-0 line-height-3 ", {
+                            "text-yellow-500":
+                              props?.currentActiveTab2 === "phoneNumberPrefix",
+                            "text-yellow-700":
+                              props?.currentActiveTab2 !== "phoneNumberPrefix",
+                          })}
+                        >
+                          Accumsan sit amet nulla facilisi morbi tempus iaculis.
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      onClick={() => {
+                        setCurrentActiveTab2("stateCode");
+                      }}
+                      className={classNames("mb-3 flex align-items-start p-3", {
+                        "bg-yellow-700":
+                          props?.currentActiveTab2 === "stateCode",
+                      })}
+                      style={{ borderRadius: "12px" }}
+                    >
+                      <i
+                        className="pi pi-user text-xl mr-3 "
+                        style={{
+                          color:
+                            props?.currentActiveTab2 !== "stateCode"
+                              ? "black"
+                              : "white",
+                        }}
+                      ></i>
+                      <div className="flex flex-column">
+                        <span
+                          className={classNames({
+                            "text-white":
+                              props?.currentActiveTab2 === "stateCode",
+                            "text-black":
+                              props?.currentActiveTab2 !== "stateCode",
+                          })}
+                        >
+                          State Code
+                        </span>
+                        <p
+                          className={classNames("mt-2 mb-0 line-height-3 ", {
+                            "text-yellow-500":
+                              props?.currentActiveTab2 === "stateCode",
+                            "text-yellow-700":
+                              props?.currentActiveTab2 !== "stateCode",
+                          })}
+                        >
+                          Accumsan sit amet nulla facilisi morbi tempus iaculis.
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      onClick={() => {
+                        setCurrentActiveTab2("countryCode");
+                      }}
+                      className={classNames("mb-3 flex align-items-start p-3", {
+                        "bg-yellow-700":
+                          props?.currentActiveTab2 === "countryCode",
+                      })}
+                      style={{ borderRadius: "12px" }}
+                    >
+                      <i
+                        className="pi pi-user text-xl mr-3 "
+                        style={{
+                          color:
+                            props?.currentActiveTab2 !== "countryCode"
+                              ? "black"
+                              : "white",
+                        }}
+                      ></i>
+                      <div className="flex flex-column">
+                        <span
+                          className={classNames({
+                            "text-white":
+                              props?.currentActiveTab2 === "countryCode",
+                            "text-black":
+                              props?.currentActiveTab2 !== "countryCode",
+                          })}
+                        >
+                          Country Code
+                        </span>
+                        <p
+                          className={classNames("mt-2 mb-0 line-height-3 ", {
+                            "text-yellow-500":
+                              props?.currentActiveTab2 === "countryCode",
+                            "text-yellow-700":
+                              props?.currentActiveTab2 !== "countryCode",
+                          })}
+                        >
+                          Accumsan sit amet nulla facilisi morbi tempus iaculis.
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      onClick={() => {
+                        setCurrentActiveTab2("taxType");
+                      }}
+                      className={classNames("mb-3 flex align-items-start p-3", {
+                        "bg-yellow-700": props?.currentActiveTab2 === "taxType",
+                      })}
+                      style={{ borderRadius: "12px" }}
+                    >
+                      <i
+                        className="pi pi-user text-xl mr-3 "
+                        style={{
+                          color:
+                            props?.currentActiveTab2 !== "taxType"
+                              ? "black"
+                              : "white",
+                        }}
+                      ></i>
+                      <div className="flex flex-column">
+                        <span
+                          className={classNames({
+                            "text-white":
+                              props?.currentActiveTab2 === "taxType",
+                            "text-black":
+                              props?.currentActiveTab2 !== "taxType",
+                          })}
+                        >
+                          Tax Type
+                        </span>
+                        <p
+                          className={classNames("mt-2 mb-0 line-height-3 ", {
+                            "text-yellow-500":
+                              props?.currentActiveTab2 === "taxType",
+                            "text-yellow-700":
+                              props?.currentActiveTab2 !== "taxType",
+                          })}
+                        >
+                          Accumsan sit amet nulla facilisi morbi tempus iaculis.
+                        </p>
+                      </div>
+                    </li>
                     {/* ~cb-add-services-card~ */}
                   </ul>
                 </div>

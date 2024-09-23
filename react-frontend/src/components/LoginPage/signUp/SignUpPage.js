@@ -74,8 +74,8 @@ const SignUpPage = (props) => {
     });
   };
 
-  const _setCounter = async (id, count) => {
-    if (isUserInvite)
+  const _setCounter = async (userType, id, count) => {
+    if (userType==="userInvite")
       return await client.service("userInvites").patch(id, {
         sendMailCounter: count,
       });
@@ -163,6 +163,7 @@ const SignUpPage = (props) => {
   };
 
   const validateEmail = async () => {
+    let loginType = "userInvite";
     let loginEmailData = await _getInviteEmail();
     if (loginEmailData.data.length === 0) {
       loginEmailData = await _getLoginEmail();
@@ -176,11 +177,12 @@ const SignUpPage = (props) => {
         const promise = await client.service("userLogin").create(_login);
         loginEmailData.data = [promise];
       }
+      loginType = "userLogin";
     } else {
       setIsUserInvite(true);
     }
     setLoginEmailData(loginEmailData.data[0]);
-    return loginEmailData.data[0];
+    return { loginEmailAccount : loginEmailData.data[0] , type : loginType};
   };
 
   const validateEmailSending = (loginEmailAccount) => {
@@ -207,11 +209,11 @@ const SignUpPage = (props) => {
       return;
     }
 
-    const loginEmailAccount = await validateEmail();
+    const { loginEmailAccount , userType} = await validateEmail();
     if (!validateEmailSending(loginEmailAccount)) return;
     if (!validateCode(loginEmailAccount)) return;
     showSuccess("Sending verification email.");
-    resendMail(loginEmailAccount);
+    resendMail(loginEmailAccount, userType);
   };
 
   const onFinishStepTwo = () => {
@@ -235,7 +237,7 @@ const SignUpPage = (props) => {
     signup();
   };
 
-  const resendMail = async (loginEmailAccount) => {
+  const resendMail = async (loginEmailAccount, userType) => {
     const _mail = {
       name: "onCodeVerifyEmail",
       type: "signup",
@@ -254,6 +256,7 @@ const SignUpPage = (props) => {
       message: "Proceed to check your email inbox.",
     });
     _setCounter(
+      userType,
       loginEmailAccount?._id,
       Number(++loginEmailAccount.sendMailCounter),
     );

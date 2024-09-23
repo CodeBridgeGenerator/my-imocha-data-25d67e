@@ -1,5 +1,3 @@
-const { Service } = require('feathers-mongoose');
+const { Service } = require("feathers-mongoose");
 
-exports.ClassificationCode = class ClassificationCode extends Service {
-  
-};
+exports.ClassificationCode = class ClassificationCode extends Service {};

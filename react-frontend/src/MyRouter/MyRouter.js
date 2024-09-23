@@ -95,8 +95,8 @@ import SingleMeasurementPage from "../components/MeasurementPage/SingleMeasureme
 import MeasurementProjectLayoutPage from "../components/MeasurementPage/MeasurementProjectLayoutPage";
 import SingleIdentifyTypePage from "../components/IdentifyTypePage/SingleIdentifyTypePage";
 import IdentifyTypeProjectLayoutPage from "../components/IdentifyTypePage/IdentifyTypeProjectLayoutPage";
-import SingleEInvoiceTypesPage from "../components/EInvoiceTypesPage/SingleEInvoiceTypesPage";
-import EInvoiceTypeProjectLayoutPage from "../components/EInvoiceTypesPage/EInvoiceTypeProjectLayoutPage";
+import SingleEInvoiceTypesPage from "../components/EinvoiceTypesPage/SingleEinvoiceTypesPage";
+import EInvoiceTypeProjectLayoutPage from "../components/EinvoiceTypesPage/EinvoiceTypeProjectLayoutPage";
 import SingleClassificationCodePage from "../components/ClassificationCodePage/SingleClassificationCodePage";
 import ClassificationCodeProjectLayoutPage from "../components/ClassificationCodePage/ClassificationCodeProjectLayoutPage";
 import SinglePaymentModePage from "../components/PaymentModePage/SinglePaymentModePage";
